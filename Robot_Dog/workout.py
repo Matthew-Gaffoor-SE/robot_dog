@@ -2,11 +2,9 @@
 import math
 from Control import *
 from Servo import *
-from Buzzer import *
 
 #setting variables and ensuring robot is in relax position to ensure the fuction
 #runs without error - such as the robot falling over
-buzzer=Buzzer()
 servo=Servo()
 control=Control()
 servo.setServoAngle(15,90)
@@ -42,7 +40,6 @@ for j in range(30):
 #push up movement so the user input variable is called to set the push up amount
 for i in range(question): #HERE I THINK!
 	for i in range(50,120,1):
-		beepcount+=1
 		control.point[0][1]=i
 		control.point[3][1]=i
 		control.run()
