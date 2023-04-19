@@ -61,7 +61,8 @@ while True:
 			else:
 				control.turnLeft()
 				control.turnLeft()
-				
+				control.turnLeft()
+				control.turnLeft()
 				control.backWard()
 				
 				if (right > left):
