@@ -96,11 +96,17 @@ This command will enable the robot dog 2.0 to sit down, displaying what it sees 
 
 *PLEASE NOTE: Entering either 'q' when the camera is used or ctrl + c in the terminal will force end any of the operations.
 
-An *optional* additional feature allows the robot dog 2.0 to recognise the user by name by doing the following (Case sensitive):
-- go to following folder Robot_Dog -> Face_Images and rename the folder 'Authorized' to the users name
-- In the Robot_Dog folder open facetrainer.py. On line 6 change "Authorized" to the users name
-- Open attention.py. On line 22 and 76 change "Authorized" to users name
-The video will now display the users name when recognized and only respond to them.
+An *optional* additional feature allows the robot dog 2.0 to recognise the user by name:
+(Case sensitive)
+- Go to the folder Robot_Dog -> Face_Images and rename the folder titled 'Authorized' to the user's name
+- In the Robot_Dog folder open facetrainer.py. On line 6 change "Authorized" to the user's name
+- Open attention.py. On line 22 and 76 change "Authorized" to user's name
+- Delete the file face-trainer.yml
+- In terminal enter the following - sudo python facetrainer.py
+The monitor will now display the user's name when using the command attention.py and the robot dog 2.0 will only respond to this user.
+To cancel this feature follow the same steps, changing the user's name back to 'Authorized'.
+
+To return robot dog 2.0 to default setting delete all images and videos from the Robot_Dog folder.
 
 If you wish to control the robot dog 2.0 manually or run the robot dog 2.0 without cables follow the instructions on Freenove's tutorial page (PAGE 87 and PAGE 94-100): https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_Raspberry_Pi
 
